@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\ISR_UART_RX_FIFO_FULL\ISR_UART_RX_FIFO_FULL.c">
+<ExpandedNodeIds>
+<v>PSoC B - Bootloadable</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\TopDesign</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\PSoC B - Bootloadable.cydwr</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Header Files</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Source Files</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Source Files\main.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\ADC_SAR</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\ADC_SAR\ADC_SAR.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\ADC_SAR\ADC_SAR.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\ADC_SAR\ADC_SAR_INT.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\ADC_SAR\ADC_SAR_PM.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\ADC_SAR_intClock</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\ADC_SAR_intClock\ADC_SAR_intClock.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\ADC_SAR_intClock\ADC_SAR_intClock.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\ADC_SAR_IRQ</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\ADC_SAR_IRQ\ADC_SAR_IRQ.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\ADC_SAR_IRQ\ADC_SAR_IRQ.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_0</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_0\Analog_Input_Pin_0.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_0\Analog_Input_Pin_0.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_0\Analog_Input_Pin_0_aliases.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_1</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_1\Analog_Input_Pin_1.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_1\Analog_Input_Pin_1.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_1\Analog_Input_Pin_1_aliases.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_2</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_2\Analog_Input_Pin_2.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_2\Analog_Input_Pin_2.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_2\Analog_Input_Pin_2_aliases.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_3</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_3\Analog_Input_Pin_3.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_3\Analog_Input_Pin_3.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_3\Analog_Input_Pin_3_aliases.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Bootloadable</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Bootloadable\Bootloadable.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Bootloadable\Bootloadable.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\cm0gcc.ld</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\Cm0Iar.icf</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\Cm0RealView.scat</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\Cm0Start.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\core_cm0.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\core_cm0_psoc4.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\core_cmFunc.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\core_cmInstr.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\CyBootAsmGnu.s</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\CyBootAsmIar.s</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\CyBootAsmRv.s</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\CyFlash.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\CyFlash.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\CyLib.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\CyLib.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\cypins.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\cyPm.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\cyPm.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\cytypes.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_boot\cyutils.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_lfclk</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_lfclk\CyLFClk.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cy_lfclk\CyLFClk.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Digital_Output_Pin_U1</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Digital_Output_Pin_U1\Digital_Output_Pin_U1.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Digital_Output_Pin_U1\Digital_Output_Pin_U1.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Digital_Output_Pin_U1\Digital_Output_Pin_U1_aliases.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Digital_Output_Pin_U2</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Digital_Output_Pin_U2\Digital_Output_Pin_U2.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Digital_Output_Pin_U2\Digital_Output_Pin_U2.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Digital_Output_Pin_U2\Digital_Output_Pin_U2_aliases.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\ISR_UART_RX_FIFO_FULL</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\ISR_UART_RX_FIFO_FULL\ISR_UART_RX_FIFO_FULL.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\ISR_UART_RX_FIFO_FULL\ISR_UART_RX_FIFO_FULL.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\LCD</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\LCD\LCD.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\LCD\LCD.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\LCD\LCD_PM.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\LCD_LCDPort</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\LCD_LCDPort\LCD_LCDPort.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\LCD_LCDPort\LCD_LCDPort.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\LCD_LCDPort\LCD_LCDPort_aliases.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\SW1_Bootloader</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\SW1_Bootloader\SW1_Bootloader.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\SW1_Bootloader\SW1_Bootloader.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\SW1_Bootloader\SW1_Bootloader_aliases.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\T_Clock</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\T_Clock\T_Clock.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\T_Clock\T_Clock.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Timer</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Timer\Timer.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Timer\Timer.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Timer\Timer_PM.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART\UART.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART\UART.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART\UART_BOOT.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART\UART_BOOT.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART\UART_PINS.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART\UART_PM.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART\UART_PVT.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART\UART_SPI_UART.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART\UART_SPI_UART.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART\UART_SPI_UART_INT.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART\UART_SPI_UART_PVT.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART\UART_UART.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART\UART_UART_BOOT.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART_rx</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART_rx\UART_rx.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART_rx\UART_rx.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART_rx\UART_rx_aliases.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART_SCBCLK</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART_SCBCLK\UART_SCBCLK.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART_SCBCLK\UART_SCBCLK.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART_tx</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART_tx\UART_tx.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART_tx\UART_tx.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\UART_tx\UART_tx_aliases.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cybootloader.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cybootloader.icf</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cydevice_trm.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cydevicegnu_trm.inc</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cydeviceiar_trm.inc</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cydevicerv_trm.inc</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cydisabledsheets.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cyfitter.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cyfitter_cfg.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cyfitter_cfg.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cyfittergnu.inc</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cyfitteriar.inc</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cyfitterrv.inc</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\cymetadata.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\project.h</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_0\Analog_Input_Pin_0.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_0\Analog_Input_Pin_0.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_0\Analog_Input_Pin_0_aliases.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_1</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_1\Analog_Input_Pin_1.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_1\Analog_Input_Pin_1.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_1\Analog_Input_Pin_1_aliases.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_2</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_2\Analog_Input_Pin_2.c</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_2\Analog_Input_Pin_2.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_2\Analog_Input_Pin_2_aliases.h</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_3</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Generated_Source\PSoC4\Analog_Input_Pin_3\Analog_Input_Pin_3.c</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>PSoC B - Bootloadable</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\TopDesign</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>PSoC B - Bootloadable</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\TopDesign</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>PSoC B - Bootloadable</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\ADC_SAR.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\ADC_SAR_INT.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\ADC_SAR_intClock.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\ADC_SAR_IRQ.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\ADC_SAR_PM.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\Analog_Input_Pin_0.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\Analog_Input_Pin_1.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\Analog_Input_Pin_2.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\Analog_Input_Pin_3.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\Bootloadable.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\Cm0Start.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\cybootloader.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\CyFlash.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\CyLFClk.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\CyLib.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\cymetadata.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\cyPm.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\cyutils.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\Digital_Output_Pin_U1.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\Digital_Output_Pin_U2.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\ISR_UART_RX_FIFO_FULL.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\LCD.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\LCD_LCDPort.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\LCD_PM.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\main.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\SW1_Bootloader.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\T_Clock.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\Timer.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\Timer_PM.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\UART.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_BOOT.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_PM.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_rx.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_SCBCLK.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_SPI_UART.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_SPI_UART_INT.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_tx.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_UART.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_UART_BOOT.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\PSoC B - Bootloadable.cyacd</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\PSoC B - Bootloadable.elf</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\PSoC B - Bootloadable.hex</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\PSoC B - Bootloadable.map</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\PSoC B - Bootloadable.gpdsc</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\PSoC B - Bootloadable.rpt</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\PSoC B - Bootloadable_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>PSoC B - Bootloadable</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\ADC_SAR.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\ADC_SAR_INT.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\ADC_SAR_intClock.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\ADC_SAR_IRQ.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\ADC_SAR_PM.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\Analog_Input_Pin_0.lst</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CortexM0\ARM_GCC_484\Debug\Listing Files\Analog_Input_Pin_1.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>PSoC B - Bootloadable</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\PSoC 4 Architecture TRM</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\PSoC 4200 Family Datasheet</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\System Reference Guides</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\System Reference Guides\cy_boot_v5_0</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\System Reference Guides\cy_lfclk_v1_0</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\ADC_SAR_SEQ_P4_v2_10</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Bootloadable_v1_30</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CharLCD_v2_10</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\cy_clock_v2_20</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\cy_isr_v1_70</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\cy_pins_v2_10</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\SCB_P4_v3_0</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Timer_v2_70</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\ZeroTerminal</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>PSoC B - Bootloadable</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\PSoC 4 Architecture TRM</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\PSoC 4200 Family Datasheet</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\System Reference Guides</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\System Reference Guides\cy_boot_v5_0</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\System Reference Guides\cy_lfclk_v1_0</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\ADC_SAR_SEQ_P4_v2_10</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\Bootloadable_v1_30</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\CharLCD_v2_10</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\cy_clock_v2_20</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\cy_isr_v1_70</v>
+<v>PSoC B - Bootloadable\PSoC B - Bootloadable\cy_pins_v2_10</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\PSoC B - Bootloadable.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\PSoC B - Bootloadable.cydsn\PSoC B - Bootloadable.cydwr" />
+<name v=".\PSoC B - Bootloadable.cydsn\main.c" />
+<name v=".\PSoC B - Bootloadable.cydsn\Generated_Source\PSoC4\ISR_UART_RX_FIFO_FULL.c" />
+</OpenDocs>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

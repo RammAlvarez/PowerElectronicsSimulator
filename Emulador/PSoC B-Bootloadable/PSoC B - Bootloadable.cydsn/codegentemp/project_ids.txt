@@ -1,0 +1,7 @@
+C:\Users\Ramm\Documents\PSoC Creator\Tesis\PSoC B-Bootloadable\PSoC B - Bootloadable.cydsn\PSoC B - Bootloadable.cyprj|5783e796-8080-4bfb-93c7-23f1b0659f90
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|c3e4b017-1a21-407e-82f7-5eb3baf2c6f4
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|1ac87853-8ed4-4c81-bc21-11f829780b01
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|36097b49-9c5f-4c08-a1f5-1d1ab1a44684
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|c72fdb26-e2bc-4174-99b0-3b46f2a732cd
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\dev\psoc4\PSoC4AnalogDevice\psoc4arch.cydsn\psoc4arch.cyprj|2e3efce2-c06a-4298-a6bd-45e26fb7507b
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|0c6cdf79-d7df-443f-9d84-5744ac394d56
