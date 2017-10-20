@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage_Simulator = new System.Windows.Forms.TabPage();
             this.numericUpDown_Simulation_NewValue = new System.Windows.Forms.NumericUpDown();
@@ -141,9 +141,9 @@
             // 
             // numericUpDown_Simulation_NewValue
             // 
-            this.numericUpDown_Simulation_NewValue.Location = new System.Drawing.Point(6, 172);
+            this.numericUpDown_Simulation_NewValue.Location = new System.Drawing.Point(6, 189);
             this.numericUpDown_Simulation_NewValue.Name = "numericUpDown_Simulation_NewValue";
-            this.numericUpDown_Simulation_NewValue.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown_Simulation_NewValue.Size = new System.Drawing.Size(180, 20);
             this.numericUpDown_Simulation_NewValue.TabIndex = 11;
             this.numericUpDown_Simulation_NewValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numericUpDown_Simulation_NewValue.ValueChanged += new System.EventHandler(this.numericUpDown_Simulation_NewValue_ValueChanged);
@@ -151,7 +151,7 @@
             // label_Simulation_NewValue
             // 
             this.label_Simulation_NewValue.AutoSize = true;
-            this.label_Simulation_NewValue.Location = new System.Drawing.Point(6, 155);
+            this.label_Simulation_NewValue.Location = new System.Drawing.Point(6, 173);
             this.label_Simulation_NewValue.Name = "label_Simulation_NewValue";
             this.label_Simulation_NewValue.Size = new System.Drawing.Size(66, 13);
             this.label_Simulation_NewValue.TabIndex = 10;
@@ -169,9 +169,9 @@
             // comboBox_Simulation_OutSignal
             // 
             this.comboBox_Simulation_OutSignal.FormattingEnabled = true;
-            this.comboBox_Simulation_OutSignal.Location = new System.Drawing.Point(7, 131);
+            this.comboBox_Simulation_OutSignal.Location = new System.Drawing.Point(6, 131);
             this.comboBox_Simulation_OutSignal.Name = "comboBox_Simulation_OutSignal";
-            this.comboBox_Simulation_OutSignal.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_Simulation_OutSignal.Size = new System.Drawing.Size(180, 21);
             this.comboBox_Simulation_OutSignal.TabIndex = 2;
             // 
             // label_Simulation_SignalToWatch
@@ -188,7 +188,7 @@
             this.button_Simulation_Stop.Enabled = false;
             this.button_Simulation_Stop.Location = new System.Drawing.Point(6, 64);
             this.button_Simulation_Stop.Name = "button_Simulation_Stop";
-            this.button_Simulation_Stop.Size = new System.Drawing.Size(75, 23);
+            this.button_Simulation_Stop.Size = new System.Drawing.Size(94, 23);
             this.button_Simulation_Stop.TabIndex = 0;
             this.button_Simulation_Stop.Text = "Detener";
             this.button_Simulation_Stop.UseVisualStyleBackColor = true;
@@ -199,7 +199,7 @@
             this.button_Simulation_Pause.Enabled = false;
             this.button_Simulation_Pause.Location = new System.Drawing.Point(6, 35);
             this.button_Simulation_Pause.Name = "button_Simulation_Pause";
-            this.button_Simulation_Pause.Size = new System.Drawing.Size(75, 23);
+            this.button_Simulation_Pause.Size = new System.Drawing.Size(94, 23);
             this.button_Simulation_Pause.TabIndex = 0;
             this.button_Simulation_Pause.Text = "Pausar";
             this.button_Simulation_Pause.UseVisualStyleBackColor = true;
@@ -209,7 +209,7 @@
             // 
             this.button_Simulation_Start.Location = new System.Drawing.Point(6, 6);
             this.button_Simulation_Start.Name = "button_Simulation_Start";
-            this.button_Simulation_Start.Size = new System.Drawing.Size(75, 23);
+            this.button_Simulation_Start.Size = new System.Drawing.Size(94, 23);
             this.button_Simulation_Start.TabIndex = 0;
             this.button_Simulation_Start.Text = "Iniciar";
             this.button_Simulation_Start.UseVisualStyleBackColor = true;
@@ -448,16 +448,16 @@
             this.chart_DataOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.chart_DataOutput.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart_DataOutput.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chart_DataOutput.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart_DataOutput.Legends.Add(legend2);
             this.chart_DataOutput.Location = new System.Drawing.Point(12, 24);
             this.chart_DataOutput.Name = "chart_DataOutput";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart_DataOutput.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart_DataOutput.Series.Add(series2);
             this.chart_DataOutput.Size = new System.Drawing.Size(468, 481);
             this.chart_DataOutput.TabIndex = 1;
             this.chart_DataOutput.Text = "chart";
@@ -603,7 +603,7 @@
             this.button_Chart_AutoSet.Name = "button_Chart_AutoSet";
             this.button_Chart_AutoSet.Size = new System.Drawing.Size(75, 23);
             this.button_Chart_AutoSet.TabIndex = 9;
-            this.button_Chart_AutoSet.Text = "Autoset";
+            this.button_Chart_AutoSet.Text = "AUTOSET";
             this.button_Chart_AutoSet.UseVisualStyleBackColor = true;
             this.button_Chart_AutoSet.Click += new System.EventHandler(this.button_Chart_AutoSet_Click);
             // 
