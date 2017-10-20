@@ -2,23 +2,15 @@
 //#undef ONLYUI
 
 
+using Ramm;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
 using System.Threading;
+using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
-using System.Diagnostics;
-using System.Collections.Concurrent;
-using System.Xml.Serialization;
-using System.IO;
-using Ramm;
 
 namespace ROACH_0100
 {
@@ -75,8 +67,7 @@ namespace ROACH_0100
                     uiConfiguration.dllLinker.FilePath, uiConfiguration.dllLinker.MethodName);
             dllLinker.AssignValues(uiConfiguration.dllLinker.ParamsValues.ToArray<float>());
             dllLinker.ParamsNames = uiConfiguration.dllLinker.ParamsNames.ToList<string>();
-
-            //TODO: Actualizar comboboxes de la simulacion para cargar los nombres de las variables
+                        
             comboBox_Simulation_OutSignal.DataSource = dllLinker.ParamsNames;
         }
 
@@ -120,18 +111,34 @@ namespace ROACH_0100
 
         private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SaveConfiguration();
-            fileManagement.Save<UIConfiguration>(uiConfiguration, newProject.ProjectName);
-            ToolStripStatusLabel_Status_Write(toolStripStatusLabel_ProgramStatus, "Proyecto guardado.");
-            Debug.WriteLine("Se guardo el proyecto.");           
+            try
+            {
+                SaveConfiguration();
+                fileManagement.Save<UIConfiguration>(uiConfiguration, newProject.ProjectName);
+                ToolStripStatusLabel_Status_Write(toolStripStatusLabel_ProgramStatus, "Proyecto guardado.");
+                Debug.WriteLine("Se guardo el proyecto.");
+            }
+            catch(Exception ex)
+            {
+                string windowTitle = "Error al guardar";
+                MessageBox.Show(ex.Message, windowTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }            
         }
 
         private void guardarComoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SaveConfiguration();
-            fileManagement.SaveXMLAs<UIConfiguration>(uiConfiguration, newProject.ProjectName);
-            ToolStripStatusLabel_Status_Write(toolStripStatusLabel_ProgramStatus, "Proyecto guardado.");
-            Debug.WriteLine("Se guardo el proyecto.");
+            try
+            {
+                SaveConfiguration();
+                fileManagement.SaveXMLAs<UIConfiguration>(uiConfiguration, newProject.ProjectName);
+                ToolStripStatusLabel_Status_Write(toolStripStatusLabel_ProgramStatus, "Proyecto guardado.");
+                Debug.WriteLine("Se guardo el proyecto.");
+            }
+            catch(Exception ex)
+            {
+                string windowTitle = "Error al guardar como";
+                MessageBox.Show(ex.Message, windowTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }            
         }
 
         private void Exportar_GraficatoolStripMenuItem_Click(object sender, EventArgs e)
@@ -164,10 +171,7 @@ namespace ROACH_0100
 
         private void cerrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //TODO: Cerrar apropiadamente los hilos(faltan muchas cosas)
-            //DLL
-            InvertFlagState(ref flag_Thread_DataReception_DLL_Enabled, ref flag_Thread_Printing_Enabled);
-            //Emulator flags
+            InvertFlagState(ref flag_Thread_DataReception_DLL_Enabled, ref flag_Thread_Printing_Enabled);           
             
             this.Close();
         }
@@ -461,7 +465,7 @@ namespace ROACH_0100
                     //Se inicializan los hilos
                     thread_DataReception_DLL = new Thread(new ThreadStart(Thread_DataReception_DLL));
                     thread_DataReception_DLL.IsBackground = true;
-                    thread_DataReception_DLL.Priority = ThreadPriority.Highest;//TOTEST: Verificar la prioridad del hilo del DLL
+                    thread_DataReception_DLL.Priority = ThreadPriority.Highest;
 
                     thread_ChartPrinting = new Thread(new ThreadStart(Thread_ChartPrinting));
                     thread_ChartPrinting.IsBackground = true;
@@ -483,7 +487,7 @@ namespace ROACH_0100
             }
             catch (Exception ex)
             {
-                string windowTitle = "Error inicializando la simulación";//Escribir el titulo de la ventana
+                string windowTitle = "Error inicializando la simulación";
                 MessageBox.Show(ex.Message, windowTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -515,7 +519,7 @@ namespace ROACH_0100
             }
             catch (Exception ex)
             {
-                string windowTitle = "Error pausando la simulación";//Escribir el titulo de la ventana
+                string windowTitle = "Error pausando la simulación";
                 MessageBox.Show(ex.Message, windowTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -571,7 +575,7 @@ namespace ROACH_0100
         {
             try
             {
-                ChartPrinting.Erase(chart_DataOutput, ref flag_Thread_Printing_IsPaused);//HACK: Porque se pausa el hilo de impresion?
+                ChartPrinting.Erase(chart_DataOutput, ref flag_Thread_Printing_IsPaused);
                 simulator_SelectedSignal = comboBox_Simulation_OutSignal.SelectedItem.ToString();
                 chart_DataOutput.Series.ElementAt<Series>(0).Name = simulator_SelectedSignal;
             }

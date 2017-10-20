@@ -1,9 +1,5 @@
 #include <math.h>
-//#include <../../../../../Users/Ramm/Documents/Visual Studio 2013/Projects/Tesis/ROACH-0100-Template/SIMDLL/Header.h>
 #define EXPORT __declspec(dllexport)
-
-//[TOTEST] Lo de abajo se esta probando
-//#define CALL __stdcall
 
 extern "C"
 {

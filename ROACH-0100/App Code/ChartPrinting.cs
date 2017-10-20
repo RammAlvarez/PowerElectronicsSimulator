@@ -1,16 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-using System.Windows.Forms.DataVisualization.Charting;
-using System.Threading;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace ROACH_0100
 {
@@ -35,8 +27,7 @@ namespace ROACH_0100
         /// <param name="chart_index">Indice actual de la lista a partir del que se imprimira.</param>
         /// <returns>Devuelve "true" si se reinicio la grafica y "false" si solo continuo imprimiendo.</returns>
         public static bool Print(Chart chart, List<float> data, int max_range, ref int chart_index)
-        {
-            //HACK: [ChartPrinting.Print] Puede que exista una mejor manera de imprimir en pantalla.
+        {            
             try
             {
                 if (chart.InvokeRequired)
@@ -57,7 +48,7 @@ namespace ROACH_0100
                     else
                     {
                         for (int i = chart_index; i < data.Count; i++)
-                            chart.Series.ElementAt<Series>(0).Points.Add(data[i]);//HACK: [ChartPrinting.Print] Posiblemente se este imprimiendo multiples veces y no sea adecuado
+                            chart.Series.ElementAt<Series>(0).Points.Add(data[i]);//TODO: Posibles impresiones multiples.
 
                         chart_index = chart.Series.ElementAt<Series>(0).Points.Count;
                         return false;
@@ -81,8 +72,7 @@ namespace ROACH_0100
         /// <param name="chart_index">Indice actual de la lista a partir del que se imprimira.</param>
         /// <returns>Devuelve "true" si se reinicio la grafica y "false" si solo continuo imprimiendo.</returns>
         public static void PrintConcurrent(Chart chart, ConcurrentQueue<float> data, int max_range)//, ref int chart_index)
-        {
-            //HACK: [ChartPrinting.PrintConcurrent] Puede que exita una mejor manera de imprimir en pantalla.
+        {            
             try
             {
                 if(chart.InvokeRequired)
@@ -92,22 +82,16 @@ namespace ROACH_0100
                     chart.Invoke(pcd, args);
                 }
                 else
-                {
-                    //if(data.Count > max_range)
+                {                    
                     if (chart.Series.ElementAt<Series>(0).Points.Count > max_range)
                     {
-                        data = new ConcurrentQueue<float>();//HACK: [ChartPrinting.PrintConcurrent] Posiblemente no sea adecuado reiniciarla.
+                        data = new ConcurrentQueue<float>();
                         chart.Series.ElementAt<Series>(0).Points.Clear();
                     }
                     else
                     {
                         float aux;
-                        //if(data.TryDequeue(out aux))
-                        //{
-                        //    chart.Series.ElementAt<Series>(0).Points.Add(aux);
-                        //    //chart_index = chart.Series.ElementAt<Series>(0).Points.Count;
-                        //}
-
+                        
                         for (int i = 0; i < data.Count; i++)
                         {
                             if(data.TryDequeue(out aux))

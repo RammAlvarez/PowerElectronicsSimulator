@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using System.Collections.Generic;
 using System.IO.Ports;
 
 namespace ROACH_0100
@@ -22,8 +17,7 @@ namespace ROACH_0100
         /// </summary>
         public SerialUART()
         {
-            //TODO: [SerialUART] Desuscripcion. Evento de recepcion no esta funcionando
-            //this.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+            
         }
 
         /// <summary>
@@ -37,9 +31,7 @@ namespace ROACH_0100
         {
             this.PortName = portName;
             this.BaudRate = baudRate;
-
-            //TODO: [SerialUART] Desuscripcion. Evento de recepcion no esta funcionando
-            //this.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+            
             if (autoOpen) this.Open();
         }
 
@@ -60,9 +52,7 @@ namespace ROACH_0100
             this.BaudRate = baudRate;
             this.Handshake = flowControl;
             this.Parity = parity;
-
-            //TODO: [SerialUART] Desuscripcion. Evento de recepcion no esta funcionando
-            //this.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+            
             if (autoOpen) this.Open();
         }
 
@@ -87,9 +77,7 @@ namespace ROACH_0100
             this.Parity = parity;
             this.DataBits = dataBits;
             this.StopBits = stopBits;
-
-            //TODO: [SerialUART] Desuscripcion. Evento de recepcion no esta funcionando
-            //this.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+            
             if (autoOpen) this.Open();
         }
         #endregion Constructors
@@ -312,8 +300,7 @@ namespace ROACH_0100
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void DataReceivedHandler(object sender, SerialDataReceivedEventArgs e)
-        {
-            //TODO: [SerialUART] Evento de recepcion no esta funcionando y provoca fallos en el inicio de la conexion
+        {            
             SerialPort sp = (SerialPort)sender;
             Data = new byte[8];
             sp.Read(buffer: Data, offset: 0, count: 1);

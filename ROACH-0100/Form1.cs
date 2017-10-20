@@ -1,19 +1,11 @@
 ﻿//#undef NOTHREADS
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-using System.Windows.Forms.DataVisualization.Charting;
 using System.Collections.Concurrent;
 using System.Diagnostics;
-using System.Runtime.InteropServices;
+using System.Linq;
+using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace ROACH_0100
 {
@@ -426,8 +418,7 @@ namespace ROACH_0100
                     textbox.Text += text + " ";                
             }
         }
-
-        //TODO: [Form1] Parece que la solucion del error de cambiar de tamaño la ventana no se solucionara de esta manera.
+                
         public delegate void PrintTextInToolStripStatusLabelDelegate(ToolStrip toolstrip, string text);
         public void PrintTextInToolStripStatusLabel(ToolStrip toolstrip, string text)
         {

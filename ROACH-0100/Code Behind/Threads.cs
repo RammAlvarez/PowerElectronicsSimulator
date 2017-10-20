@@ -1,19 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-using System.IO.Ports;
-using System.Threading;
-using System.Diagnostics;
-using System.Windows.Forms.DataVisualization.Charting;
 using System.Collections.Concurrent;
-using System.Reflection;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading;
+using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace ROACH_0100
 {
@@ -21,11 +13,7 @@ namespace ROACH_0100
     {
         #region Variables
         ConcurrentQueue<byte> textbox_Buffer = new ConcurrentQueue<byte>();
-        /// <summary>
-        /// Cantidad de datos que se saltarán y no serán impresos en la gráfica.
-        /// </summary>
-        int chartPrinting_SkippedData = 0;
-
+        
         /// <summary>
         /// Señal de la simulación seleccionada para imprimir en la gráfica.
         /// </summary>
@@ -60,17 +48,8 @@ namespace ROACH_0100
         bool flag_Thread_Printing_IsPaused = false;
         #endregion Variables
 
-        struct StreamPackage
-        {
-            public byte[] StartDelimiter;
-            public byte[] FrameData;
-        }
-
-        StreamPackage streamPackage = new StreamPackage();
-
         #region Threasd
-        //HACK: Averiguar como cancelar hilos de la manera mas optima
-
+        
         /// <summary>
         /// Hilo encargado de la recepcion de datos a traves del puerto serial.
         /// </summary>
@@ -80,8 +59,7 @@ namespace ROACH_0100
             {                
                 byte[] buffer;
                 Queue<byte> buffer_queue = new Queue<byte>();
-                float scale_factor = 59.577272f; // (182.041666f) para pruebas
-                //int aux = 0;
+                float scale_factor = 59.577272f; //HACK: Puedes usar (182.041666f) para pruebas                
 
                 Func<byte> Buffer_Queue_TryDequeue = () =>
                     {
@@ -135,21 +113,11 @@ namespace ROACH_0100
                                     if (buffer_queue.Peek() == 255)
                                     {
                                         Buffer_Queue_TryDequeue();
-                                        ////3.Agregamos los datos a la cola(si hay suficientes datos en la cola)                                        
-                                        //if(buffer_queue.Count > 1)
-                                        //{
-                                        //    //(ext_data = (MSB * 256 + LSB)/Scale_factor;
-                                        //    data.Enqueue(
-                                        //       (buffer_queue.Dequeue() * 256 + buffer_queue.Dequeue()) / scale_factor
-                                        //       );
-                                           
-                                        //}
+                                        ////3.Agregamos los datos a la cola(si hay suficientes datos en la cola)                                                                                
                                         if (buffer_queue.Count > 2)
-                                        {
-                                            //[LAST MINUTE CHANGE] Hecho para que soporte la transmision del signo
+                                        {                                            
                                             float local_aux = buffer_queue.Dequeue();
                                             float sign = local_aux != 0 ? 1f : -1f;
-                                            //(ext_data = Sign*((MSB * 256 + LSB)/Scale_factor);
                                             data.Enqueue(
                                                (sign * (buffer_queue.Dequeue() * 256 + buffer_queue.Dequeue()) / scale_factor)
                                                );
@@ -266,7 +234,7 @@ namespace ROACH_0100
                             if (chartPointsCount != 0 && stopWatch_FilledChart.IsRunning == false)
                             {
                                 //Se han de perder algunos nanosegundos posiblemente, pero parece no ser significativo
-                                stopWatch_FilledChart.Start(); //HACK: [Thread_ChartPrinting] Redundancia de inicio del Stopwatch.
+                                stopWatch_FilledChart.Start();
                             }
                             else if (chartPointsCount == 0 && stopWatch_FilledChart.IsRunning == true)
                             {

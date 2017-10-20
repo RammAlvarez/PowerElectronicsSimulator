@@ -76,7 +76,6 @@
             this.guardarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Exportar_GraficatoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label_RefreshRate = new System.Windows.Forms.Label();
             this.label_SamplingTime = new System.Windows.Forms.Label();
             this.label_MaximumVerticalValue = new System.Windows.Forms.Label();
@@ -483,7 +482,7 @@
             // toolStripStatusLabel_Time
             // 
             this.toolStripStatusLabel_Time.Name = "toolStripStatusLabel_Time";
-            this.toolStripStatusLabel_Time.Size = new System.Drawing.Size(130, 17);
+            this.toolStripStatusLabel_Time.Size = new System.Drawing.Size(129, 17);
             this.toolStripStatusLabel_Time.Text = "Tiempo Transcurrido: 0";
             // 
             // toolStripStatusLabel_ChartPrintingTime
@@ -495,8 +494,7 @@
             // menuStrip
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.archivoToolStripMenuItem,
-            this.infoToolStripMenuItem});
+            this.archivoToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(904, 24);
@@ -557,12 +555,6 @@
             this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.cerrarToolStripMenuItem.Text = "Cerrar";
             this.cerrarToolStripMenuItem.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
-            // 
-            // infoToolStripMenuItem
-            // 
-            this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
-            this.infoToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
-            this.infoToolStripMenuItem.Text = "Info";
             // 
             // label_RefreshRate
             // 
@@ -805,7 +797,6 @@
         private System.Windows.Forms.ToolStripMenuItem guardarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem guardarComoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cerrarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem Exportar_GraficatoolStripMenuItem;
     }
 }
