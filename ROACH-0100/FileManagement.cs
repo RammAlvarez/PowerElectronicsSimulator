@@ -7,15 +7,15 @@ namespace Ramm
     class FileManagement
     {
         /// <summary>
-        /// 
+        /// Direcccion del archivo.
         /// </summary>
         public string FilePath { get; set; }
         /// <summary>
-        /// 
+        /// Direcccion de la carpeta.
         /// </summary>
         public string FolderPath { get; set; }
         /// <summary>
-        /// 
+        /// Establece si el archivo ha sido guardado anetriormente.
         /// </summary>
         private bool hasBeenSavedBefore = false;
 
@@ -53,6 +53,12 @@ namespace Ramm
             }
         }
 
+        /// <summary>
+        /// Guarda un archivo XML en una carpeta a escoger.
+        /// </summary>
+        /// <typeparam name="T">Serializable</typeparam>
+        /// <param name="variable">Datos a guardar.</param>
+        /// <param name="projectName">Nombre del Projecto</param>
         public void SaveXMLAs<T>(T variable, string projectName)
         {
             //Se busca el archivo
@@ -64,6 +70,11 @@ namespace Ramm
             SaveXML<T>(variable);
         }
 
+        /// <summary>
+        /// Invoca a una funcion de guardado siempre y cuando la información de guardado sea valida.
+        /// </summary>
+        /// <typeparam name="T">Serializable</typeparam>
+        /// <param name="variable">Datos a guardar.</param>
         public void SaveXML<T>(T variable)
         {
             if(this.FilePath != null || this.FilePath != "")
@@ -73,6 +84,12 @@ namespace Ramm
             hasBeenSavedBefore = true;
         }
 
+        /// <summary>
+        /// Crea un archivo XML y escribe los datos proporcionados en una dirección de archivo proporcionada.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="variable">Datos a guardar.</param>
+        /// <param name="pathFile">Dirección del archivo.</param>
         public void SaveXML<T>(T variable, string pathFile)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(T));
@@ -83,6 +100,12 @@ namespace Ramm
             hasBeenSavedBefore = true;
         }
 
+        /// <summary>
+        /// Abre un archivo XML y lo carga en memoria.
+        /// </summary>
+        /// <typeparam name="T">Serializable</typeparam>
+        /// <param name="pathfile">Dirección del archivo.</param>
+        /// <returns></returns>
         public T OpenXMLProject<T>(string pathfile)
         {
             T result;

@@ -86,6 +86,9 @@ namespace ROACH_0100
             }
         }
 
+        /// <summary>
+        /// Obtiene la configuracion de los controles de la interface
+        /// </summary>
         private void SaveConfiguration()
         {
             uiConfiguration = new UIConfiguration();
@@ -109,6 +112,11 @@ namespace ROACH_0100
             uiConfiguration.dllLinker = dllLinker;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -143,30 +151,38 @@ namespace ROACH_0100
 
         private void Exportar_GraficatoolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DataPointCollection data = chart_DataOutput.Series[0].Points;
-
-            SaveFileDialog dialog = new SaveFileDialog();
-            dialog.Filter = "CSV | *.csv";
-            dialog.Title = "Exportar";
-            dialog.ShowDialog();
-
-            using(FileWriter writer = new FileWriter(dialog.FileName))
+            try
             {
-                int i = 0;
-                
-                StringBuilder sb = new StringBuilder();
+                DataPointCollection data = chart_DataOutput.Series[0].Points;
 
-                foreach (DataPoint item in data)
+                SaveFileDialog dialog = new SaveFileDialog();
+                dialog.Filter = "CSV | *.csv";
+                dialog.Title = "Exportar";
+                dialog.ShowDialog();
+
+                using(FileWriter writer = new FileWriter(dialog.FileName))
                 {
-                    sb.AppendLine(i++ + "," + item.YValues.GetValue(0));                    
+                    int i = 0;
+                
+                    StringBuilder sb = new StringBuilder();
+
+                    foreach (DataPoint item in data)
+                    {
+                        sb.AppendLine(i++ + "," + item.YValues.GetValue(0));                    
+                    }
+
+                    writer.WriteLine(sb.ToString());
+                    writer.Flush();
+                    data.Dispose();
                 }
 
-                writer.WriteLine(sb.ToString());
-                writer.Flush();
-                data.Dispose();
+                ToolStripStatusLabel_Status_Write(toolStripStatusLabel_ProgramStatus, "Gráfica exportada");
             }
-
-            ToolStripStatusLabel_Status_Write(toolStripStatusLabel_ProgramStatus, "Gráfica exportada");
+            catch(Exception ex)
+            {
+                string windowTitle = "Error al guardar como";
+                MessageBox.Show(ex.Message, windowTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void cerrarToolStripMenuItem_Click(object sender, EventArgs e)

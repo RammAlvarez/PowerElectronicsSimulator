@@ -9,7 +9,7 @@ using Ramm;
 namespace ROACH_0100
 {
     /// <summary>
-    /// Clase que 
+    /// Clase que contiene la configuración de la interface(GUI) y la conexión UART.
     /// </summary>
     [Serializable]
     public class UIConfiguration
@@ -30,20 +30,11 @@ namespace ROACH_0100
             public string Parity;
             public int DataBits;
             public string StopBits;
-        }
-
-        //public struct Simulator_Params
-        //{
-        //    public string DllFilePath;
-        //    public int ParamsQuantity;
-        //    public List<string> ParamsName;
-        //    public float[] OriginalParamsValues;
-        //}
+        }        
 
         public LinkerToUnamangedLibrary dllLinker;
         public UI_Params UIParams;
         public UART_Params UartParams;
-        //public Simulator_Params SimulatorParams { get; set; }
 
         /// <summary>
         /// Inicializa una nueva instancia para el guardado de datos de la configuración.

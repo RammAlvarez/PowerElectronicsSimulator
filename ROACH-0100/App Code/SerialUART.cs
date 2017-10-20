@@ -3,6 +3,9 @@ using System.IO.Ports;
 
 namespace ROACH_0100
 {
+    /// <summary>
+    /// Representa un puerto serial UART
+    /// </summary>
     class SerialUART : SerialPort
     {
         /// <summary>
