@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage_Simulator = new System.Windows.Forms.TabPage();
             this.numericUpDown_Simulation_NewValue = new System.Windows.Forms.NumericUpDown();
@@ -448,16 +448,16 @@
             this.chart_DataOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea2.Name = "ChartArea1";
-            this.chart_DataOutput.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart_DataOutput.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chart_DataOutput.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart_DataOutput.Legends.Add(legend1);
             this.chart_DataOutput.Location = new System.Drawing.Point(12, 24);
             this.chart_DataOutput.Name = "chart_DataOutput";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart_DataOutput.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart_DataOutput.Series.Add(series1);
             this.chart_DataOutput.Size = new System.Drawing.Size(468, 481);
             this.chart_DataOutput.TabIndex = 1;
             this.chart_DataOutput.Text = "chart";
@@ -560,6 +560,7 @@
             // 
             this.label_RefreshRate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label_RefreshRate.AutoSize = true;
+            this.label_RefreshRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_RefreshRate.Location = new System.Drawing.Point(688, 50);
             this.label_RefreshRate.Name = "label_RefreshRate";
             this.label_RefreshRate.Size = new System.Drawing.Size(140, 13);
@@ -570,6 +571,7 @@
             // 
             this.label_SamplingTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label_SamplingTime.AutoSize = true;
+            this.label_SamplingTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_SamplingTime.Location = new System.Drawing.Point(692, 114);
             this.label_SamplingTime.Name = "label_SamplingTime";
             this.label_SamplingTime.Size = new System.Drawing.Size(103, 13);
@@ -580,6 +582,7 @@
             // 
             this.label_MaximumVerticalValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label_MaximumVerticalValue.AutoSize = true;
+            this.label_MaximumVerticalValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_MaximumVerticalValue.Location = new System.Drawing.Point(692, 178);
             this.label_MaximumVerticalValue.Name = "label_MaximumVerticalValue";
             this.label_MaximumVerticalValue.Size = new System.Drawing.Size(106, 13);
@@ -590,6 +593,7 @@
             // 
             this.label_MinimumVerticalValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label_MinimumVerticalValue.AutoSize = true;
+            this.label_MinimumVerticalValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_MinimumVerticalValue.Location = new System.Drawing.Point(692, 242);
             this.label_MinimumVerticalValue.Name = "label_MinimumVerticalValue";
             this.label_MinimumVerticalValue.Size = new System.Drawing.Size(105, 13);
@@ -599,9 +603,9 @@
             // button_Chart_AutoSet
             // 
             this.button_Chart_AutoSet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Chart_AutoSet.Location = new System.Drawing.Point(731, 306);
+            this.button_Chart_AutoSet.Location = new System.Drawing.Point(695, 306);
             this.button_Chart_AutoSet.Name = "button_Chart_AutoSet";
-            this.button_Chart_AutoSet.Size = new System.Drawing.Size(75, 23);
+            this.button_Chart_AutoSet.Size = new System.Drawing.Size(196, 23);
             this.button_Chart_AutoSet.TabIndex = 9;
             this.button_Chart_AutoSet.Text = "AUTOSET";
             this.button_Chart_AutoSet.UseVisualStyleBackColor = true;
@@ -674,9 +678,9 @@
             // button_Reset
             // 
             this.button_Reset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Reset.Location = new System.Drawing.Point(731, 336);
+            this.button_Reset.Location = new System.Drawing.Point(695, 335);
             this.button_Reset.Name = "button_Reset";
-            this.button_Reset.Size = new System.Drawing.Size(75, 23);
+            this.button_Reset.Size = new System.Drawing.Size(196, 23);
             this.button_Reset.TabIndex = 13;
             this.button_Reset.Text = "RESET";
             this.button_Reset.UseVisualStyleBackColor = true;
