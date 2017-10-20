@@ -38,7 +38,7 @@ permitirá conectarte por UART con un microcontrolador a través de un formato d
 
 
 -----
-# ¿Cómo utlilizar este código?
+# ¿Cómo utilizar este código?
 
 ## Prerequisitos
 1. [.NET Framework 4.5 o superior](https://www.microsoft.com/es-mx/download/details.aspx?id=30653)
@@ -51,7 +51,7 @@ permitirá conectarte por UART con un microcontrolador a través de un formato d
 2. **DLL**, lenguaje C.
 3. **Microcontrolador**, lenguaje C.
 
-## Guía de inicio rápido
+## Guía de uso rápido
 1. Clona este proyecto y abrelo en Visual Studio.
 2. Presiona **Ctrl+F5** para probarlo(Si intentas correrlo con F5 te encotraras con errores por la llamada dinámica al dll), 
 puedes seguir los pasos de arriba para utilizarlo.
