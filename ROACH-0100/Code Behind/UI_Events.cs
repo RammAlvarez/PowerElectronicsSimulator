@@ -133,6 +133,11 @@ namespace ROACH_0100
             }            
         }
 
+        /// <summary>
+        /// Guarda la co
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void guardarComoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -149,6 +154,11 @@ namespace ROACH_0100
             }            
         }
 
+        /// <summary>
+        /// Exporta los puntos visibles en la gráfica a un .CVS desde el menú.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Exportar_GraficatoolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -185,6 +195,11 @@ namespace ROACH_0100
             }
         }
 
+        /// <summary>
+        /// Cierra el programa desde el menú.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cerrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InvertFlagState(ref flag_Thread_DataReception_DLL_Enabled, ref flag_Thread_Printing_Enabled);           

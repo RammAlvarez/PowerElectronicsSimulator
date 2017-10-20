@@ -47,18 +47,18 @@
             this.label_FilePath.AutoSize = true;
             this.label_FilePath.Location = new System.Drawing.Point(13, 61);
             this.label_FilePath.Name = "label_FilePath";
-            this.label_FilePath.Size = new System.Drawing.Size(110, 13);
+            this.label_FilePath.Size = new System.Drawing.Size(239, 13);
             this.label_FilePath.TabIndex = 0;
-            this.label_FilePath.Text = "Dirrección del archivo";
+            this.label_FilePath.Text = "Dirección del archivo .dll con el modelo a evaluar";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(13, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 13);
+            this.label2.Size = new System.Drawing.Size(232, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Nombre del método";
+            this.label2.Text = "Nombre del método (Médoto expuesto por el dll)";
             // 
             // label3
             // 
@@ -165,9 +165,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label_FilePath);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form_NewProject";
             this.ShowIcon = false;
-            this.Text = "Nuevo Proyecto";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Crear nuevo proyecto...";
             this.ResumeLayout(false);
             this.PerformLayout();
 

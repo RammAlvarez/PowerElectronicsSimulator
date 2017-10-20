@@ -709,7 +709,7 @@
             this.Name = "Form1";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ROACH";
+            this.Text = "Power Electronics Simulator";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.tabControl.ResumeLayout(false);
             this.tabPage_Simulator.ResumeLayout(false);
