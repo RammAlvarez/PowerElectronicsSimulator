@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using System.Runtime.InteropServices;
+﻿using Microsoft.Win32.SafeHandles;
+using System;
 using System.Runtime.ConstrainedExecution;
-using Microsoft.Win32.SafeHandles;
+using System.Runtime.InteropServices;
 using System.Security.Permissions;
 
 namespace ROACH_0100
 {
     /// <summary>
     /// Clase que permite importar en tiempo de ejecucion archivos no manejados por el CLR y utilizar
-    /// sus metodos dinamicamente.
+    /// sus metodos dinamicamente. (Permite la carga dynamica de DLL en C)
     /// </summary>
     public sealed class UnmanagedLibrary
     {

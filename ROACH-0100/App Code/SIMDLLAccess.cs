@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace ROACH_0100
 {
+    /// <summary>
+    /// [Obsoleto] Clase que se encarga de de llamar a un dll en C.
+    /// </summary>
+    [Obsolete("Se utilizó al principio del proyecto cuando no existia la carga dínamica del DLL en C", true)]
     public class SIMDLLAccess
     {
         public const string filePath = @"C:\Users\Ramm\Documents\Visual Studio 2013\Projects\Tesis\ROACH-0100-Template\Debug\SIMDLL.dll";

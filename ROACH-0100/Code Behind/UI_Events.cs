@@ -16,14 +16,28 @@ namespace ROACH_0100
 {
     public partial class Form1 : Form
     {
+        #region Fields
+        /// <summary>
+        /// Hilo de ejecucion en el fondo.
+        /// </summary>
         Thread thread_DataReception_UART, thread_DataReception_DLL, 
             thread_ChartPrinting, thread_TextPrinting;
 
+        /// <summary>
+        /// Forma encargada de crear un nuevo proyecto.
+        /// </summary>
         Form_NewProject newProject;
 
+        /// <summary>
+        /// Obtiene o establece la confuiguración de l proyecto.
+        /// </summary>
         UIConfiguration uiConfiguration;
 
+        /// <summary>
+        /// Obtiene o establece los valores de los archivos existentes o a crear.
+        /// </summary>
         FileManagement fileManagement = new FileManagement();
+        #endregion Fields
 
         #region Menus
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -43,13 +57,18 @@ namespace ROACH_0100
             }
         }
                 
+        /// <summary>
+        /// Carga la configuración guardada en un XML.
+        /// </summary>
         public void UploadConfiguration()
         {
+            // Carga de la configuración de la gráfica
             numericUpDown_RefreshRate.Value = uiConfiguration.UIParams.RefreshRate;
             numericUpDown_RangeY_Minimum.Value = uiConfiguration.UIParams.Range_Y_Minimum;
             numericUpDown_RangeY_Maximum.Value = uiConfiguration.UIParams.Range_Y_Maximum;
             numericUpDown_SamplingTime.Value = uiConfiguration.UIParams.SamplingTime;
 
+            //Carga la configuración de la UART
             comboBox_EmulatorInterface_Ports.SelectedIndex = 
                 comboBox_EmulatorInterface_Ports.FindString(uiConfiguration.UartParams.PortName);
             comboBox_EmulatorInterface_BaudRates.SelectedIndex =
@@ -63,6 +82,7 @@ namespace ROACH_0100
             comboBox_EmulatorInterface_StopBits.SelectedIndex =
                 comboBox_EmulatorInterface_StopBits.FindString(uiConfiguration.UartParams.StopBits);
 
+            //Carga la configuracion del DLL
             dllLinker = new LinkerToUnamangedLibrary(uiConfiguration.dllLinker.ParamsQuantity,
                     uiConfiguration.dllLinker.FilePath, uiConfiguration.dllLinker.MethodName);
             dllLinker.AssignValues(uiConfiguration.dllLinker.ParamsValues.ToArray<float>());
@@ -71,6 +91,11 @@ namespace ROACH_0100
             comboBox_Simulation_OutSignal.DataSource = dllLinker.ParamsNames;
         }
 
+        /// <summary>
+        /// Abre un archivo XML con los datos de un proyecto guardado previamente.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog openDialog = new OpenFileDialog();
@@ -87,7 +112,7 @@ namespace ROACH_0100
         }
 
         /// <summary>
-        /// Obtiene la configuracion de los controles de la interface
+        /// Obtiene la configuracion de los controles de la interface.
         /// </summary>
         private void SaveConfiguration()
         {
@@ -113,7 +138,7 @@ namespace ROACH_0100
         }
 
         /// <summary>
-        /// 
+        /// Guarda las configuraciones actuales en la dirección preestablecida.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -134,7 +159,8 @@ namespace ROACH_0100
         }
 
         /// <summary>
-        /// Guarda la co
+        /// Guarda la configuración de un proyecto en una locación especifica a traves de una ventana de
+        /// dialogo.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -617,61 +643,12 @@ namespace ROACH_0100
                     windowTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }            
         }
-
-        ///// <summary>
-        ///// Cambia las señales a mostrar, ya sean las señales de salida o las señales de control(secundarias).
-        ///// </summary>
-        ///// <param name="sender"></param>
-        ///// <param name="e"></param>
-        //private void checkBox_Simulation_SeeControlSignals_CheckedChanged(object sender, EventArgs e)
-        //{            
-        //    try
-        //    {
-        //        ChartPrinting.Erase(chart_DataOutput, ref flag_Thread_Printing_IsPaused);//HACK: Porque se pausa el hilo de impresion?
-
-        //        InvertComboBoxHabilitation(comboBox_Simulation_OutSignal, comboBox_Simulation_OtherSignal);
-
-        //        if (checkBox_Simulation_SeeOtherSignals.Checked)
-        //        {
-        //            simulator_SelectedSignal = comboBox_Simulation_OtherSignal.SelectedItem.ToString();
-        //            chart_DataOutput.Series.ElementAt<Series>(0).Name = simulator_SelectedSignal;
-        //        }
-        //        else
-        //        {
-        //            simulator_SelectedSignal = comboBox_Simulation_OutSignal.SelectedItem.ToString();
-        //            chart_DataOutput.Series.ElementAt<Series>(0).Name = simulator_SelectedSignal;
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        string windowTitle = "Simulador: Error cambiando la señal";
-        //        MessageBox.Show(ex.Message + "\r\n Event: checkBox_Simulation_SeeControlSignals_CheckedChanged", 
-        //            windowTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-        //}
-
-        ///// <summary>
-        ///// Cambia la señal de control(secundaria) a mostar en la gráfica.
-        ///// </summary>
-        ///// <param name="sender"></param>
-        ///// <param name="e"></param>
-        //private void comboBox_Simulation_OtherSignal_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        ChartPrinting.Erase(chart_DataOutput, ref flag_Thread_Printing_IsPaused);//HACK: Porque se pausa el hilo de impresion?
-        //        simulator_SelectedSignal = comboBox_Simulation_OtherSignal.SelectedItem.ToString();
-        //        chart_DataOutput.Series.ElementAt<Series>(0).Name = simulator_SelectedSignal;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        string windowTitle = "Simulador: Error cambiando la señal";
-        //        MessageBox.Show(ex.Message + "\r\n Event: comboBox_Simulation_OtherSignal_SelectedIndexChanged", 
-        //            windowTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-        //}
         
-
+        /// <summary>
+        /// Cambia el valor de la señal elegida en la gráfica.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void numericUpDown_Simulation_NewValue_ValueChanged(object sender, EventArgs e)
         {
             try

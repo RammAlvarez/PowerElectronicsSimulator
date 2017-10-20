@@ -183,23 +183,11 @@ namespace ROACH_0100
             #endregion Buttons
                         
             #region ComboBoxes
-            //TODO: [Form1] Cambiar
-            //comboBox_Simulation_OutSignal.DataSource = SIMDLLAccess.GetOutSignals();
-            //comboBox_Simulation_OtherSignal.DataSource = SIMDLLAccess.GetControlSignals();
-            //comboBox_Simulation_ValueToChange.DataSource = SIMDLLAccess.GetSignalsNames();
-
-
+            
             comboBox_Simulation_OutSignal.SelectedIndexChanged += 
                 new EventHandler(comboBox_Simulation_OutSignal_SelectedIndexChanged);
-            //comboBox_Simulation_OtherSignal.SelectedIndexChanged += 
-            //    new EventHandler(comboBox_Simulation_OtherSignal_SelectedIndexChanged);
-            //comboBox_Simulation_ValueToChange.SelectedIndexChanged +=
-            //    new EventHandler(comboBox_Simulation_ValueToChange_SelectedIndexChanged);
 
             SetComboBoxAsNoEditable(comboBox_Simulation_OutSignal);
-            //SetComboBoxAsNoEditable(comboBox_Simulation_OutSignal, comboBox_Simulation_OtherSignal, 
-            //    comboBox_Simulation_ValueToChange);
-            //comboBox_Simulation_OtherSignal.Enabled = false;
             #endregion ComboBoxes
 
             #region NumericsUpDowns

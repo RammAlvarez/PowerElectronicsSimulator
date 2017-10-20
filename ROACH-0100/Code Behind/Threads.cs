@@ -85,7 +85,6 @@ namespace ROACH_0100
                              * 2. Armar el paquete(viene en paquetes de 4 bytes 2 de inicializacion y 2 de datos)
                              *      2.1 Guardar los datos en una cola
                              *      2.2 Buscar los bytes delimitadores
-                             *      2.3 
                              * 3. Agregar los datos la cola
                              */
 
