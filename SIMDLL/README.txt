@@ -1,0 +1,1 @@
+El dll generado por el archivo SIMDLL.cpp se encuentra en la raiz en la carpeta DEBUG.
